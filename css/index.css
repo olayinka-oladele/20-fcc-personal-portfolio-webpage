@@ -1,99 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
 body {
-  background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
-  font-family: sans-serif;
-  padding: 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--main-white);
 }
 
-h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+  z-index: 10;
+  background: var(--main-red);
 }
 
-h2 {
-  font-size: 30px;
-}
-
-.established {
-  font-style: italic;
-}
-
-h1,
-h2,
-p {
-  text-align: center;
-}
-
-.menu {
-  width: 80%;
-  background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  max-width: 500px;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-hr {
-  height: 2px;
-  background-color: brown;
-  border-color: brown;
-}
-
-.bottom-line {
-  margin-top: 25px;
-}
-
-h1,
-h2 {
-  font-family: Impact, serif;
-}
-
-.item p {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-
-.flavor,
-.dessert {
-  text-align: left;
-  width: 75%;
-}
-
-.price {
-  text-align: right;
-  width: 25%;
-}
-
-/* FOOTER */
-
-footer {
-  font-size: 14px;
-}
-
-.address {
-  margin-bottom: 5px;
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
 }
 
 a {
-  color: black;
+  color: var(--main-white);
+  text-decoration: none;
 }
 
-a:visited {
-  color: black;
+.nav-list a {
+  padding: 2rem;
+  font-size: 2.2rem;
 }
 
-a:hover {
-  color: brown;
+ul {
+  list-style: none;
 }
 
-a:active {
-  color: brown;
+section {
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+  background-color: var(--main-gray);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+section h1 {
+  text-align: center;
+  flex-direction: row;
+  height: 5%;
+  margin: 2.5%;
+  padding: 30%;
+}
+
+section p {
+  text-align: center;
+  color: var(--main-red);
+  margin: 50px;
+  padding-top: 0;
+}
+
+.select-p {
+  margin: 10%;
+}
+
+div {
+  width: 100%;
 }
