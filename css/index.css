@@ -18,6 +18,12 @@ body {
   color: var(--main-white);
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -44,12 +50,6 @@ a {
   display: block;
   font-size: 2.2rem;
   padding: 2rem;
-}
-
-h1 h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-align: center;
 }
 
 ul {
@@ -105,6 +105,10 @@ h1 {
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
+}
+
+.project {
+  background: var(--main-gray);
 }
 
 .code {
