@@ -72,17 +72,6 @@ h1 {
   font-size: 3rem ;
 }
 
-.projects-section {
-  display: flex;
-  background-color: var(--main-blue);
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 20px;
-  margin: 0;
-  font-size: 25px;
-}
-
 .project-image {
   height: calc(100% - 2.8rem);
   width: 100%;
@@ -91,31 +80,25 @@ h1 {
 }
 
 .projects-section-header {
-  max-width: 680px;
-  margin: 6rem 0 auto;
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-white);
-  display: flex;
 }
 
-.projects-section-header > h2 {
-  margin-bottom: 20px;
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3.5rem;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 5rem;
-  margin-top: 6rem;
-}
-
-.project-title {
-  background-color: #000;
-  margin-top: 0;
-  margin: 0;
+  margin-bottom: 6rem;
 }
 
 .code {
